@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #ecf5ff;
+}
+
+.top-line {
+    margin-bottom: 20px;
+}
+
+.bottom-line {
+    margin-top: 50px
+}
+
+h1 {
+    color: #56a5eb;
+}
+
+.grid {
+    width: 70%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+#quiz {
+    margin: 40px 0;
+    padding: 40px 100px;
+}
+
+/* .grid > * {
+    width: 100%
+} */
+
+.py-3 {
+    padding: 30px 0;
+}
+#score-box {
+    display: flex;
+    padding: 20px 0;
+    font-weight: 700;
+    font-size: 20px;
+    justify-content: flex-end;
+}
+
+#score {
+    padding-left: 10px;
+}
+
+.text-center {
+    text-align: center
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.btn {
+    padding: 15px 20px;
+    text-align: center;
+    color: #56a5eb;
+    border: 1px solid #56a5eb;
+    background: #fff;
+    width: 100%;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 10px 16px 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-3px);
+    transition: transform 2s;
+}
+
+.btn:focus {
+    outline: 0;
+}
+#progress {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.first-buttons, .second-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 50px 0 50px;
+}
+
+#questions {
+    font-size: 25px;
+    background: #2a22a1;
+    padding: 10px;
+    color: #fff;
+}
+
+@media(max-width: 1200px) {
+    .grid {
+        width: 100%
+    }
+
+    #quiz {
+        padding: 0 50px;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .grid {
+        width: 100%
+    }
+
+    .buttons {
+        margin-top: 30px;
+    }
+   .first-buttons, .second-buttons {
+       flex-direction: column;
+       padding: 0;
+   }
+
+   .btn {
+       width: 100%;
+       margin: 0 0 10px 0;
+   }
+
+   #progress {
+    flex-direction: column;
+   }
+
+   #progress span {
+    padding-top: 30px
+   }
+}
